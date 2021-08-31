@@ -14,6 +14,7 @@ namespace FOS\UserBundle\Model;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Symfony\Component\Security\Core\User\UserInterface as BaseUserInterface;
+use Symfony\Component\Security\Core\User\EquatableInterface;
 
 /**
  * Storage agnostic user object.
@@ -21,7 +22,7 @@ use Symfony\Component\Security\Core\User\UserInterface as BaseUserInterface;
  * @author Thibault Duplessis <thibault.duplessis@gmail.com>
  * @author Johannes M. Schmitt <schmittjoh@gmail.com>
  */
-abstract class User implements UserInterface, GroupableInterface
+abstract class User implements UserInterface, EquatableInterface, GroupableInterface
 {
     /**
      * @var mixed

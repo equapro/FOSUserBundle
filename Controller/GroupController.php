@@ -37,7 +37,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  *
  * @deprecated
  */
-class GroupController extends Controller
+class GroupController extends AbstractController
 {
     private $eventDispatcher;
     private $formFactory;
